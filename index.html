@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Quick Natura</title>
+    <meta charset="utf-8">
+    <title>www.QuickNatura.es</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="waitingFor.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estiloQN.css" />
+    <script src="funciones.js"></script>
+
+</head>
+<body>
+    <audio id="gotita"><source src="media/drop.mp3" volume=0.2 /></audio>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <iframe src=""></iframe>
+        </div>
+    </div>
+    <header id="cabecera">
+        <div class="modal-header text-center  hidden-xs center-block">
+            <img src="media/Hopstarter-Flag-Borderless-Spain.ico"  width="20" height="20" class="pull-right language1">
+            <img src="media/Hopstarter-Flag-Borderless-United-Kingdom.ico" width="20" height="20" class="pull-right language2">
+            <img src="media/Comunidad_Valenciana_400x400.png" width="20" height="20" class="pull-right language3">
+            <a href="index.html"><img src="media/logo-definitivo-uv.png" width="100" height="100" /></a> <img src="media/tituloqn.png" width="400" height="70"/>
+            <!--<h2>La Naturaleza al alcance de tu mano</h2>-->
+            
+        </div>
+        <nav class="navbar nav navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand visible-xs visible-sm visible-md" href="index.html"><span class="glyphicon glyphicon-leaf"></span> QuickNatura</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a id="ini" href="index.html">Inicio</a></li>
+                        <li ><a id="proyecto"><b>Proyecto</b></a></li>
+                        <li><a id="flor">Flora</a></li>
+                        <li><a id="rutas">Rutas</a></li>
+                        <li><a id="contac">Contacto</a></li>
+                        <li><a id="maps">Mapas</a></li>
+                        <li>
+                            <a id="botonglosario" class="navbar-inverse" style="visibility:hidden" data-toggle="dropdown">Listado <span class="caret"></span></a>
+                                <ul id="barraflor" class="dropdown-menu navbar-inverse"></ul>
+                        </li>
+                
+                    </ul>
+                    <div style="border-top:solid;text-align:center" class="visible-xs">
+                        <div style="display:inline-block;padding-top:10px">
+                            <img src="media/Hopstarter-Flag-Borderless-Spain.ico" width="20" height="20" class="language1" style="float:left">
+                            <img src="media/Hopstarter-Flag-Borderless-United-Kingdom.ico" width="20" height="20" class="language2" style="float:left">
+                            <img src="media/Comunidad_Valenciana_400x400.png" width="20" height="20" class="language3" style="float:left">
+                            <br>
+                            <span class="infolang" style="color:white">Español</span>
+                        </div>
+                    </div>
+                     <ul class="nav navbar-nav navbar-right">
+
+         
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="cuerpo" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <div id="secciones" class="container-fluid">
+                    <div id="seccion" class="col-md-6 container-fluid col-xs-12">
+                        <article>
+                            <h1>¡Bienvenido a Quick Natura!</h1>
+                            <h1 lang="en">¡Welcome to Quick Natura!</h1>
+                            <img class="img-responsive visible-xs center-block" src="media/logo-definitivo-uv.png" width="150" height="150" />
+                                <p>Esta idea pretende dar a conocer, de manera rápida y amena, a nuestros silenciosos vecinos vegetales, mediante curiosidades, datos e historias sobre ellos.</p><br />
+                                <p>Mediante el sistema de los códigos QR (<i>Quick Response code</i>), queremos que, cuando veas una planta con nuestro código, te sientas invitado a leerlo con tu móvil, para que, en apenas unos segundos, puedas disfrutar de las curiosidades y conocimientos que ese árbol quiere transmitirte.</p><br />
+                                <p>Así pues, bienvenido de nuevo, disfruta la experiencia desde tu smartphone en tu ciudad y en tu día a día junto a la naturaleza.</p><br />
+                                <h2>¿En qué consiste?</h2>
+								<img class="img-responsive visible-xs  visible-sm center-block" src="media/fotoqr.jpg"/>
+								<h2>Ahora mismo estamos preparando una ruta interactiva mediante la cual tú, y tu teléfono móvil, podréis ir descubriendo de manera cómoda y rápida interesantes conocimientos sobre esos vecinos tan respetuosos que viven justo enfrente de tu casa y que pueblan todas nuestras aceras y jardines. Siguiendo un sencillo mapa donde se indican los códigos QR más cercanos a seguir, podrás pasar una mañana o tarde (¡tú eliges el momento!), muy entretenida, descubriendo la parte más natural de tu entorno</h2>
+								<h2>Quick Natura pretende ampliar su alcance de códigos QR para cubrir cada vez más parques, jardines, árboles interesantes y demás plantas de tu ciudad.</h2>
+								<h2>Seguimos trabajando en está página web así como en diferentes parques, jardines y otros lugares de Valencia. Por ello pedimos disculpas de antemano si algunos contenidos no aparecen disponibles (y ya te digo que lo estarán).</h2>
+								<h1>¿Qué son los códigos QR?</h1>
+								<img class="img-responsive visible-xs visible-sm center-block" src="media/icono-lector-qr.png" width="350" height="350"/></br>
+								<p>Los códigos QR (“quick response” o lo que es lo mismo: “respuesta rápida”) son unos códigos muy similares a los códigos de barras que tan acostumbrados estamos a ver en muchos de los productos que compramos en los supermercados.</p><br/>
+                                <p>En el caso de los códigos QR podemos ver que usan cuadrados de diferentes tamaños en forma de una matriz y por ello mismo permiten guardar información en dos direcciones, vertical y horizontalmente (no como en los códigos de barras convencionales donde sólo se almacena información en la horizontal, leyéndose de izquierda a derecha). Además, los cuadrados grandes de las esquinas ayudan a determinar la posición del código permitiendo que se pueda leer incluso boca abajo y corrigiendo posibles errores en la lectura causados por el deterioro del código.</p><br />
+                                <p>Los códigos QR fueron desarrollados por la compañía japonesa Denso Wave (fabricante de piezas para vehículos) en 1994 y curiosamente esta empresa decretó que no haría uso de la patente de estos códigos, asegurando su libre uso por parte de los desarrolladores y el público en general. Esto permite que se puedan usar los códigos QR sin coste alguno, sin preocuparse por problemas de patentes y haciendo que cualquiera pueda crear y compartir estos códigos. Su uso en Japón está muy extendido y aquí, cada vez más. Además, al parecer, fueron dos personas las encargadas de desarrollarlos y se dice que estaban obsesionadas con almacenar la máxima información en el menor espacio posible.</p><br />
+                                <img class="img-responsive visible-xs visible-sm center-block" src="media/qr-quicknatura.jpg" width="200" height="200"/></br>
+                                <p>Son muy útiles porque pueden contener hasta 4.200 caracteres alfanuméricos, es decir, letras, números y caracteres. La matriz de puntos en la que se guardan los datos del código QR no es legible para el ojo humano. Se debe leer con un teléfono móvil o una tablet, o con un dispositivo que disponga de la aplicación correspondiente (un lector de códigos QR) que hoy en día se puede adquirir fácilmente y gratuitamente. Cuando la aplicación detecta el código QR (a través de la cámara del dispositivo) lee los datos de la matriz de manera casi instantánea.</p>
+                        </article>
+                    </div>
+                    <div id="seccion2" class="col-lg-3 col-md-6 container-fluid hidden-xs hidden-sm">
+                        <div class="row">
+                          <img id="visor" class="img-responsive center-block" src="media/fotoqr.jpg"/>
+                        </div>
+                        <div class="row">
+                            <img id="visor2" src="media/icono-lector-qr.png" class="img-responsive center-block"/>
+                        </div>
+                    </div>
+                    <div id="seccion3" class="col-md-3 container-fluid visible-lg pull-right">
+                        <div class="row">
+                            <img id="visor3" class="img-responsive center-block" src="" />
+                        </div>
+                        <div class="row">
+                            <!--<h1><img id="visor4" src="media/fotoqr.jpg" class="img-responsive center-block" /></h1>-->
+                            <div id="myCarousel" class ="carousel slide center-block img-responsive pull-right" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img class="img-responsive" width="350" height="450" src="media/portada.jpg">
+                                    </div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" width="350" height="450" src="media/dibujoiniciocarrusel.jpg" >
+                                    </div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" width="350" height="450" src="media/imagencarrusel2.jpg">
+                                    </div>
+
+                                    <div class="item">
+                                        <img class="img-responsive" width="350" height="450" src="media/frutomagnolio.jpg">
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <img class="img-responsive" width="350" height="450" src="media/sorus.jpg">
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <img class="img-responsive" width="350" height="450" src="media/venus.jpg">
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <img class="img-responsive" width="350" height="450" src="media/fotovaria1.jpg">
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                
+               
+
+
+                 <footer id="pie" class="navbar-fixed-bottom hidden-xs">
+							Síguenos:
+							<a href="https://twitter.com/QuickNatura" target="_blank"><img alt="Síguenos en Twitter" height="32" src="http://3.bp.blogspot.com/-wlwaJJG-eOY/UiXnHS2jLsI/AAAAAAAAByQ/I2tLyZDLNL4/s1600/Twitter+NEW.png" title="Síguenos en Twitter" width="32" /></a>
+							<a href="https://www.facebook.com/quicknatura" target="_blank"><img alt="Síguenos en facebook" height="32" src="http://1.bp.blogspot.com/-PrByV4NBlSs/UiXnD1FEFnI/AAAAAAAABws/dUhvcAdYRiY/s1600/Facebook+alt+1.png" title="Síguenos en facebook" width="32" /></a>
+					
+							Colaboran:
+							<a href="http://www.uv.es"> <img src="media/logo_uv.png" width="40" height="55" /> </a>
+							<a href="https://www.facebook.com/naturbans/?fref=ts"> <img src="media/naturban.png" width="70" height="30" /> </a>
+                    
+                </footer>
+                <footer id="pie" class="navbar visible-xs">
+							Síguenos:
+							<a href="https://twitter.com/QuickNatura" target="_blank"><img alt="Síguenos en Twitter" height="32" src="http://3.bp.blogspot.com/-wlwaJJG-eOY/UiXnHS2jLsI/AAAAAAAAByQ/I2tLyZDLNL4/s1600/Twitter+NEW.png" title="Síguenos en Twitter" width="32" /></a>
+							<a href="https://www.facebook.com/quicknatura" target="_blank"><img alt="Síguenos en facebook" height="32" src="http://1.bp.blogspot.com/-PrByV4NBlSs/UiXnD1FEFnI/AAAAAAAABws/dUhvcAdYRiY/s1600/Facebook+alt+1.png" title="Síguenos en facebook" width="32" /></a>
+							
+							Colaboran:
+							<a href="http://www.uv.es"> <img src="media/logo_uv.png" width="40" height="55" /> </a>
+							<a href="https://www.facebook.com/naturbans/?fref=ts"> <img src="media/naturban.png" width="70" height="30" /> </a>
+
+				</footer>
+        </div>
+    </div>
+    </div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84784353-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+
+                    

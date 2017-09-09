@@ -1,0 +1,284 @@
+﻿
+.floritem{
+    margin: 5px 5px 5px 5px;
+    cursor: pointer;
+   background-image: url(media/hojacarga.gif);
+   background-size: contain;
+   box-shadow: rgba(128, 128, 128, 0.3) 2px 2px;
+   border-radius: 5px 5px;
+}
+
+
+
+a{
+
+   color: green;
+}
+
+#barraflor a{
+
+   color: white;
+}
+
+a:hover{
+
+   color: forestgreen;
+}
+
+#myNavbar li{
+    cursor: pointer;
+}
+
+.language1,.language2,.language3 {
+    cursor: pointer;
+    padding: 1px;
+}
+
+.floritem:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+}
+
+
+#volver{
+    padding: 5px 5px 5px 5px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 90px 90px;
+}
+
+
+#volver:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/*ocultar barras defs scroll*/
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#content browser {
+ margin-right: -14px !important;
+ overflow-y: scroll;
+ overflow-x: hidden;
+}
+
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@-webkit-keyframes swing
+{
+15%
+{
+-webkit-transform: translateX(5px);
+transform: translateX(5px);
+}
+30%
+{
+-webkit-transform: translateX(-5px);
+transform: translateX(-5px);
+}
+50%
+{
+-webkit-transform: translateX(3px);
+transform: translateX(3px);
+}
+65%
+{
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+80%
+{
+-webkit-transform: translateX(2px);
+transform: translateX(2px);
+}
+100%
+{
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+@keyframes swing
+{
+15%
+{
+-webkit-transform: translateX(5px);
+transform: translateX(5px);
+}
+30%
+{
+-webkit-transform: translateX(-5px);
+transform: translateX(-5px);
+}
+50%
+{
+-webkit-transform: translateX(3px);
+transform: translateX(3px);
+}
+65%
+{
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+80%
+{
+-webkit-transform: translateX(2px);
+transform: translateX(2px);
+}
+100%
+{
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+
+
+ html {
+  min-width: 100%;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #f1f7e3;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 10px;
+}
+
+
+#cabecera{
+
+    background: url(media/header2.jpg) round space;
+
+}
+
+#cuerpo img:hover{
+    cursor: pointer; 
+        -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+#cabecera h2{
+    color: #241e1e;
+	font-size: 22px;
+}
+
+#menu1{
+    max-height: 70px;
+}
+
+#seccion{
+
+    text-align: justify;
+    color:dimgrey;
+    overflow-y: scroll;
+
+}
+
+
+#seccion h1{
+	font: bold 20px ubuntu, verdana, sans-serif;
+    padding: 5px;
+    margin-bottom: 25px;
+
+}
+
+#seccion h2{
+    width:100%;
+    text-size-adjust: auto;
+	font: bold 14px ubuntu, verdana, sans-serif;
+    padding: 5px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+#secciones {
+    background-color: #f1f7e3;
+    padding: 20px;
+}
+
+#seccion2{
+  padding: 20px 20px;
+}
+
+#seccion3{
+    padding: 20px 20px;
+
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#desple{
+    color: white;
+    background-color: #241e1e;
+    border-radius: 3px 3px;
+}
+
+#pie{
+    background-color: #f1f7e3;
+    width: 100%;
+	text-align: center;
+    display: inline-block;
+    padding:10px;
+}
+
+#seccion2 img {
+    padding: 20px 20px;
+}
+
+
+#seccion3 {
+    padding: 20px 20px;
+}
+
+figcaption{
+}
+
+img:-webkit-full-screen { cursor:zoom-out; }
+img:-moz-full-screen { cursor:zoom-out; }
+img:-ms-fullscreen { cursor:zoom-out; }
+img:fullscreen { cursor:zoom-out; }
