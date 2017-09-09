@@ -274,18 +274,6 @@ function playOver() {
      audio.play();
 }
 
-//accion de mostsrar mapa modal
-$(document).ready(function () {
-    $("#maps").click(function () {
-        $("#myModal").attr("align", "middle");
-        $("#myModal iframe").attr("src", "https://www.google.com/maps/d/embed?mid=12SleMIc3btMOoWAjjUHQerH5458");
-        $("#myModal iframe").attr("width", $(document).width()-30);
-        $("#myModal iframe").attr("height", $(document).height()-30);
-        $("#myModal").modal();
-    });
-});
-
-
 
 $(window).on("resize", function () {
     $('.modal:visible').each(centerModal);
