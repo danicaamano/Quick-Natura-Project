@@ -486,9 +486,9 @@ function motrarFlores() {
                     $("#seccion3").hide();
 
                     if (window.innerWidth < 1400) {
-                        var pie = "<figcaption  style=position:absolute;left:50px;color:white><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + texto + "</i></font></figcaption>"
+                        var pie = "<figcaption  style=position:absolute;left:50px;top:40px;color:white><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + texto + "</i></font></figcaption>"
                     } else {
-                        var pie = "<figcaption  style=position:absolute;left:50px;color:white><font size=3 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + texto + "</i></font></figcaption>"
+                        var pie = "<figcaption  style=position:absolute;left:50px;top:40px;color:white><font size=3 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + texto + "</i></font></figcaption>"
                     }
 
                     $("#seccion2").html("<div class=responsive height=" + height + ">" + pie + "<img id=pagequick class=responsive height=" + height + ">");
