@@ -543,7 +543,7 @@ function ajusteSeccion() {
     var pos = $(".navbar").position().top;
     var pos2 = window.innerHeight;
     var tam = $("#cabecera").height();
-    $('#seccion').css('max-height', pos2 - pos - tam + 40);
+    $('#seccion').css('max-height', pos2 - pos - tam);
 }
 
 //control de flag para redireccion
