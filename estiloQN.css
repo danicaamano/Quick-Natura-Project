@@ -2,13 +2,12 @@
 .floritem{
     margin: 5px 5px 5px 5px;
     cursor: pointer;
-   background-image: url(media/hojacarga.gif);
+   background-image: url(media/loader2.gif);
    background-size: contain;
    box-shadow: rgba(128, 128, 128, 0.3) 2px 2px;
    border-radius: 5px 5px;
+
 }
-
-
 
 a{
 
@@ -25,14 +24,6 @@ a:hover{
    color: forestgreen;
 }
 
-#myNavbar li{
-    cursor: pointer;
-}
-
-.language1,.language2,.language3 {
-    cursor: pointer;
-    padding: 1px;
-}
 
 .floritem:hover{
     -webkit-animation: swing 1s ease;
@@ -41,7 +32,6 @@ a:hover{
     animation-iteration-count: 1;
 
 }
-
 
 #volver{
     padding: 5px 5px 5px 5px;
@@ -56,6 +46,7 @@ a:hover{
     animation: swing 1s ease;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+
 }
 
 /*ocultar barras defs scroll*/
@@ -63,13 +54,10 @@ a:hover{
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
-
-#content browser {
- margin-right: -14px !important;
- overflow-y: scroll;
- overflow-x: hidden;
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
-
 
 @-webkit-keyframes flash {
 	0% {
@@ -175,21 +163,6 @@ body {
 }
 
 
-#cabecera{
-
-    background: url(media/header2.jpg) round space;
-
-}
-
-#cuerpo img:hover{
-    cursor: pointer; 
-        -webkit-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-}
-
-
 #cabecera h2{
     color: #241e1e;
 	font-size: 22px;
@@ -204,12 +177,11 @@ body {
     text-align: justify;
     color:dimgrey;
     overflow-y: scroll;
-
 }
 
 
 #seccion h1{
-	font: bold 20px ubuntu, verdana, sans-serif;
+	font: bold 22px ubuntu, verdana, sans-serif;
     padding: 5px;
     margin-bottom: 25px;
 
@@ -218,25 +190,44 @@ body {
 #seccion h2{
     width:100%;
     text-size-adjust: auto;
+	font: bold 18px ubuntu, verdana, sans-serif;
+    padding: 5px;
+    display: inline-block;
+    line-height: 20px;
+}
+
+#seccion p{
+	width:100%;
+    text-size-adjust: auto;
 	font: bold 14px ubuntu, verdana, sans-serif;
     padding: 5px;
     display: inline-block;
     line-height: 20px;
 }
 
+#seccion2 img{
+    padding: 1px 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 #secciones {
     background-color: #f1f7e3;
     padding: 20px;
+    
 }
 
 #seccion2{
   padding: 20px 20px;
+  
 }
 
 #seccion3{
     padding: 20px 20px;
+    padding-top: 29px;
 
 }
+
 
 .embed-container {
     position: relative;
@@ -266,19 +257,83 @@ body {
     padding:10px;
 }
 
-#seccion2 img {
-    padding: 20px 20px;
-}
-
-
-#seccion3 {
-    padding: 20px 20px;
-}
-
 figcaption{
+    width: 100%;
+	font: 14px ubuntu, verdana;
 }
 
+.figcaptionpie{
+    padding: 10px;
+    width: 100%;
+	font: 14px ubuntu, verdana;
+
+}
 img:-webkit-full-screen { cursor:zoom-out; }
 img:-moz-full-screen { cursor:zoom-out; }
 img:-ms-fullscreen { cursor:zoom-out; }
 img:fullscreen { cursor:zoom-out; }
+
+.language1, .language2, .language3{
+    padding: 3px;
+    border-radius: 20px 20px;
+    
+}
+
+#myNavbar li{
+    cursor: pointer;
+}
+
+secciones img:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+}
+
+#cuerpo img:hover{
+    cursor: pointer;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-responsive {
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 56.25%;
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.language1:hover{
+    cursor: pointer
+    
+
+}
+
+.language2:hover {
+    cursor: pointer
+    
+}
+
+.language3:hover {
+    cursor: pointer
+    
+}

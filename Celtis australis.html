@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    
+    <title>Quick Natura</title>
+    <meta charset="utf-8">
+    <title>www.QuickNatura.es</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estiloQN.css" />
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <audio id="gotita"><source src="media/drop.mp3" volume=0.2 /></audio>
+    
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <iframe src="" width="640" height="480"></iframe>
+        </div>
+    </div>
+    
+    <div id="cuerpo" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <div id="secciones" class="container-fluid">
+                    <div id="seccion" class="col-md-6 container-fluid col-xs-12">
+                        <article>
+                            <h1><i>Celtis australis</i> L.  (Almez)</h1>
+                            <h2>
+                                <p>Se trata de una planta tintórea (se usa la raíz para teñir porque contiene sustancias colorantes), de gran importancia tanto en la industria maderera como en la medicinal. Al parecer, el famoso orador Lucio Craso (político romano del 140 a.c.), tenía muchos de estos árboles en el jardín de su casa y sólo aceptó venderla cuando pudo excluir de la venta a todos sus almeces.</p>
+                                <img class="img-responsive visible-xs visible-sm center-block" src="plantas/Celtis australis.jpg" /><br />
+                                <p>En Algimia de Almonacid (al lado de la Sierra de Espadán, en la Comunidad Valenciana), se usa la madera de este árbol de hoja caduca para tallar figuras y para construir utensilios de arado, sillas de manos, remos, cayados e incluso esquíes, ya que la madera es elástica y compacta. Existe una tradición en Cataluña que no se practica con frecuencia hoy en día, de plantar un almez cada vez que nace un primogénito (el que heredará las propiedades de la familia). </p>
+                                <p>Su nombre es de origen desconocido. Linneo pensó que el nombre original, <i>Lotus</i>, era de origen griego, cuando en realidad era romano. Los romanos llamaban ya al almez <i>Celtis</i> y también <i>lotus</i>, por ser una planta leñosa y de fruto comestible (llamaban de igual manera <i>lotus</i> a varias plantas similares).</p>
+                                <p>Es un árbol ornamental que crece con rapidez y puede llegar a vivir más de 500 años, aunque los que llegan a la vejez suelen desquebrajarse antes. </p>
+								<img class="img-responsive visible-xs visible-sm center-block" src="plantas/celtisaustralisflor.jpg"/> <figcaption class="figcaptionpie-responsive visible-xs visible-sm" style="text-align:center">Detalle de la flor. No presenta periantio y es hermafrodita <i></i> </figcaption><br />
+								<p>Al parecer, en el templo de Atenea en Lindos (isla de Rodas), había una figura de Hércules combatiendo un león tallada en madera de almez. </p>
+                                <img class="img-responsive visible-xs visible-sm center-block" src="plantas/celtisaustralis2.jpg"/><br />
+                                <p>El almez forma parte de la familia de los olmos, pero tiene el fruto carnoso y no alado como es habitual en esa familia.</p>
+                                <img class="img-responsive visible-xs visible-sm center-block" src="plantas/celtisaustralisflor1.jpg"/> <figcaption class="figcaptionpie-responsive visible-xs visible-sm" style="text-align:center">Detalle de la flor con los estambres en la base<i></i> </figcaption><br />
+                                
+                                
+                                <p><big><u>Ficha técnica:</u></big>
+                                <p>Familia: <i>Ulmaceae</i>
+                                <p>Origen: Sur de Europa, Oeste de Asia y Norte de África
+                                <p>Altura máxima: 25 metros
+                                <p>Época de floración: marzo-abril-mayo
+                                <p>Otros datos: Puede vivir más de 5 o 6 siglos
+
+                                    <h1 lang="en"></h1>
+                                <p lang="en">Coming soon...</p>
+                                <h1 lang="va"></h1>
+                                <p lang="va">Pròximament...</p>
+
+                                    <!--Aqui va el cuestionario, en indez se borra, pero se usa en las paginas de cada planta-->
+                                    <!---<button class="btn btn-success" data-toggle="collapse" data-target="#qtest">ESO</button>
+                                    <div id="qtest" class="collapse">
+
+                                    </div>
+                                    <button class="btn btn-warning" data-toggle="collapse" data-target="#qtest2">Bachillerato</button>
+                                    <div id="qtest2" class="collapse">
+                                    </div>
+                                    <button class="btn btn-danger" data-toggle="collapse" data-target="#qtest3">Universitario</button>
+                                    <div id="qtest3" class="collapse">
+                                    </div>-->
+</h2>
+							
+                        </article>
+                    </div>
+                    <div id="seccion2" class="col-lg-3 col-md-6 container-fluid hidden-xs hidden-sm">
+                        <div class="row">
+                          <img id="visor" src="plantas/Celtis australis.jpg" class="img-responsive center-block">
+                          <figcaption><i></i></figcaption>
+                        </div>
+                        <div class="row">
+                            <img id="visor2" src="plantas/celtisaustralisflor.jpg" class="img-responsive center-block">
+                            <figcaption class="figcaptionpie">Flor de <i>Celtis australis</i>femenina y masculina</figcaption>
+                        </div>
+                    </div>
+                    <div id="seccion3" class="col-md-3 container-fluid visible-lg pull-right">
+                        <div class="row">
+                            <img id="visor3" class="img-responsive center-block" src="" />
+                        </div>
+                        <div class="row">
+							<!--<h1><img id="visor4" src="media/fotoqr.jpg" class="img-responsive center-block" /></h1>-->
+                            <div id="myCarousel" class ="carousel slide center-block img-responsive pull-right" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                   
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img class="img-responsive center-block" src="plantas/celtisaustralis3.jpg">
+                                        <figcaption><i></i></figcaption>
+                                    </div>
+
+                                    <div class="item">
+                                        <img id="visor" class="img-responsive center-block" src="plantas/celtisaustralisdibujo.jpg"/>
+                                        <figcaption>Thomé, O.W., Flora von Deutschland Österreich und der Schweiz, Tafeln, vol. 2: t. 185 (1885)</figcaption>
+                                    </div>
+
+                                   <div class="item">
+                                        <img id="visor" class="img-responsive center-block" src="">
+										<figcaption></figcaption>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--<h1><img id="visor4" src="media/fotoqr.jpg" class="img-responsive center-block" /></h1>-->
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" id="corte"></div>
+
+                
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
+

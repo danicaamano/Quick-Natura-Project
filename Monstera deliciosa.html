@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    </script>
+    <title>Quick Natura</title>
+    <meta charset="utf-8">
+    <title>www.QuickNatura.es</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estiloQN.css" />
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <audio id="gotita"><source src="media/drop.mp3" volume=0.2 /></audio>
+    
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <iframe src="" width="640" height="480"></iframe>
+        </div>
+    </div>
+    
+    <div id="cuerpo" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                <div id="secciones" class="container-fluid">
+                    <div id="seccion" class="col-md-6 container-fluid col-xs-12">
+                        <article>
+                            <h1><i>Monstera deliciosa</i> Liebm.  (Costilla de Adán)</h1>
+                            <h2>
+                                <p>Se trata de una planta generalmente trepadora. Su nombre, <i>Monstera</i> hace referencia a sus hojas porque significa algo similar a "monstruosa" o anormal y estas son muy grandes y presentan unos espacios en la lámina (toda la superficie de la hoja). Crece generalmente usando otras plantas como soporte para ir ascendiendo en busca de luz y aunque no es parásita, puede llegar a impedir que la planta soporte vea limitado su crecimiento y a la larga esto acabe matándola. </p>
+                                <img class="img-responsive visible-xs visible-sm center-block" src="plantas/Monstera deliciosa.jpg" /><br />
+                                <p>Los espacios que presentan las hojas tienen la función de impedir que esta se llene de agua. Es típica de zonas tropicales, donde las precipitaciones son elevadas (el suministro de agua no es un problema) y el peso del agua acumulada sobre la hoja podría hacer que cediera el peciolo, perdiendo así la hoja.</p>
+                                <p>La flor es muy pequeña, viene en forma de inflorescencia recubierta por una capa que parece un único pétalo muy grande. En realidad es una bráctea de color crema (las brácteas son las estructuras que envuelven la inflorescencia). Esta puede llegar a medir hasta 23 cm de longitud.</p>
+                                <p></p>
+								<img class="img-responsive visible-xs visible-sm center-block" src="plantas/monsteraflor.jpg"/> <figcaption class="figcaptionpie-responsive visible-xs visible-sm" style="text-align:center">Detalle de la flor y de la bráctea blanca que la rodea<i></i></figcaption><br /><br />
+								<p>El fruto es alargado, verde, con forma de pepino y muchas veces pasa desapercibido por su coloración. Su nombre, <i>deliciosa</i>, hace referencia al sabor del fruto, aunque ¡cuidado! puede ser peligroso comer un trozo del fruto poco maduro con sus pequeñas semillas negras. A parte de que os dejará un sabor áspero en la boca el resto del día, contiene ácido oxálico, el cual produce irritaciones.</p>
+                                <img class="img-responsive visible-xs visible-sm center-block" src="plantas/monsterafruto.jpg"/> <figcaption class="figcaptionpie-responsive visible-xs visible-sm" style="text-align:center">Detalle del fruto inmaduro <i></i></figcaption><br /><br />
+                                <p>Generalmente se usa como planta ornamental de interior. Crece adecuadamente a 20-30 °C, con alta humedad, y necesita sombra. Por debajo de 10 ºC no se desarrolla bien y si llega a darse hielo no sobrevivirá.</p>
+                                <img class="img-responsive visible-xs visible-sm center-block" src=""/><br />
+                                <p></p>
+                                <p></p><br />
+
+                                <p><big><u>Ficha técnica:</u></big>
+                                <p>Familia: <i>Araceae</i>
+                                <p>Origen: Norte de Argentina y Sur de México
+                                <p>Altura: Puede trepar y llegar hasta los 20 metros de altura
+                                <p>Época de floración: junio-julio-agosto-septiembre
+                                <p>Otros datos: Es de la misma familia que las calas y los filodendros (tienen en común la flor tan característica)</p>
+
+                                <h1 lang="en"></h1>
+                                <p lang="en">Coming soon...</p>
+                                <h1 lang="va"></h1>
+                                <p lang="va">Pròximament...</p>
+
+                                <!--Aqui va el cuestionario, en indez se borra, pero se usa en las paginas de cada planta-->
+                                <!--<button class="btn btn-success" data-toggle="collapse" data-target="#qtest">ESO</button>
+									<div id="qtest" class="collapse">
+										
+									</div>
+								<button class="btn btn-warning" data-toggle="collapse" data-target="#qtest2">Bachillerato</button>
+									<div id="qtest2" class="collapse">
+									</div>
+								<button class="btn btn-danger" data-toggle="collapse" data-target="#qtest3">Universitario</button>
+									<div id="qtest3" class="collapse">	
+									</div>-->
+                            </h2>
+							
+                        </article>
+                    </div>
+                    <div id="seccion2" class="col-lg-3 col-md-6 container-fluid hidden-xs hidden-sm">
+                        <div class="row">
+                          <img id="visor" src="plantas/Monstera deliciosa.jpg" class="img-responsive center-block">
+                          <figcaption><i></i></figcaption>
+                        </div>
+                        <div class="row">
+                            <img id="visor2" src="plantas/monsteraflor.jpg" class="img-responsive center-block">
+                            <figcaption><i></i></figcaption>
+                        </div>
+                    </div>
+                    <div id="seccion3" class="col-md-3 container-fluid visible-lg pull-right">
+                        <div class="row">
+                            <img id="visor3" class="img-responsive center-block" src="" />
+                        </div>
+                        <div class="row">
+							<!--<h1><img id="visor4" src="media/fotoqr.jpg" class="img-responsive center-block" /></h1>-->
+                            <div id="myCarousel" class ="carousel slide center-block img-responsive pull-right" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                   
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img class="img-responsive center-block" src="plantas/monstera1.jpg">
+                                        <figcaption><i>Monstera deliciosa</i> en los Jardines de Monforte, Valencia</figcaption>
+                                    </div>
+
+                                    <div class="item">
+                                        <img id="visor" class="img-responsive center-block" src="plantas/monsterahoja.jpg"/>
+                                        <figcaption>Detalle de la hoja</figcaption>
+                                    </div>
+
+                                   <div class="item">
+                                        <img id="visor" class="img-responsive center-block" src="plantas/monsterafruto.jpg">
+										<figcaption>Detalle del fruto</figcaption>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--<h1><img id="visor4" src="media/fotoqr.jpg" class="img-responsive center-block" /></h1>-->
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix" id="corte"></div>
+
+                
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
+

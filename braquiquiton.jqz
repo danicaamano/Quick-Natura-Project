@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Sergio</dc:creator>
+    <dc:title>&amp;#x00BF;C&amp;#x00FA;anto sabes del braquiquito?</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>&amp;#x00BF;C&amp;#x00FA;anto sabes del braquiquito?</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>0</include-reading>
+<reading-title></reading-title>
+<reading-text></reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x00BF;Por qu&amp;#x00E9; los frutos del braquiquito aparecen siempre abiertos?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Porque al hidratarse se abre</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Porque as&amp;#x00ED; facilita la dispersi&amp;#x00F3;n de sus semillas</text><feedback>Cierto. De este modo hace que sea m&amp;#x00E1;s f&amp;#x00E1;cil para los animales comerse sus semillas y transportarlas en su sistema digestivo</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Porque su textura hace que al crecer el fruto se quiebre y se abra</text><feedback>Cierto. El material vegetal se quiebra haciendo que sea m&amp;#x00E1;s facil para los animales acceder a sus semillas y as&amp;#x00ED; transportarlas en su sistema digestivo</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>En realidad sus semillas son tan deliciosas que los animales las abren siempre que las ven</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x00BF;Tendr&amp;#x00E1; que engrosar su tronco en su lugar de origen?</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>Si, tambi&amp;#x00E9;n puede sufrir temporadas de sequ&amp;#x00ED;a</text><feedback>En principio no. Los braquiquitos en Espa&amp;#x00F1;a puede que s&amp;#x00ED;, aunque ya est&amp;#x00E1;n acostumbrados a nuestra sequ&amp;#x00ED;a</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>No, all&amp;#x00ED; no hay temporadas de sequ&amp;#x00ED;a</text><feedback>Ciertamente. Aunque podemos encontrar braquiquitos con el tronco engrosado por situarse en zonas no tan h&amp;#x00FA;medas</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>No, sabe administrar muy bien el agua que absorbe</text><feedback>No. Si est&amp;#x00E1; recubierto de clorofila y realiza la fotos&amp;#x00ED;ntesis en todas sus partes, perder&amp;#x00E1; mucha agua</feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>Si, pierde mucha agua al estar recubierto totalmente de clorofila</text><feedback>Efectivamente. Aunque suele vivir en ambientes tropicales y selv&amp;#x00E1;ticos de Australia y perder agua no es un problema muy grave</feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question></question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle></exercise-subtitle>
+<instructions></instructions>
+<guess-correct>Correcto</guess-correct>
+<guess-incorrect>Incorrecto</guess-incorrect>
+<partly-incorrect>Tu respuesta es parcialmente incorrecta</partly-incorrect>
+<enter-a-guess>Introduce una respuesta</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Respuestas correctas:</correct-answers>
+<show-answer-caption>Mostrar respuesta</show-answer-caption>
+<include-hint>1</include-hint>
+<include-show-answer>1</include-show-answer>
+<next-ex-url>nextpage.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>1</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>0</shuffle-questions>
+<shuffle-answers>0</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>2</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>Tu puntuaci&amp;#x00F3;n es: </your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<correct-first-time>Respuestas correctas al primer intento</correct-first-time>
+<completed-so-far>Preguntas contestadas hasta este punto:</completed-so-far>
+<exercise-completed>Ejercicio completado</exercise-completed>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>0</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>0</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Ubuntu,Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#f5ffd7</page-bg-color>
+<title-color>#000000</title-color>
+<ex-bg-color>#FFFFFF</ex-bg-color>
+<text-color>#000000</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#000000</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Respuestas correctas al primer intento</correct-first-time>
+<check-caption>Comprobar respuesta</check-caption>
+<ok-caption>OK</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Pista</hint-caption>
+<show-all-questions-caption>Show all questions</show-all-questions-caption>
+<show-one-by-one-caption>Show questions one by one</show-one-by-one-caption>
+<show-also-correct>1</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+<include-scorm-12>0</include-scorm-12>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

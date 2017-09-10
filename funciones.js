@@ -4,7 +4,6 @@
 
 //carga de paginas no index
 $(document).ready(function () {
-    waitingDialog.show('Loading QuickNatura', { dialogSize: 'sm', progressType: 'success' });
     var location = window.location.href;
     var indalmo = location.indexOf("#");
     if (indalmo > 0) {
@@ -43,9 +42,6 @@ $(document).ready(function () {
     }
 });
 
-window.onload = function () { setTimeout(function () { waitingDialog.hide(); $('#cuerpo').fadeIn(200); }, 500) }
-
-
 ////////////////////////////////////
 ///// Control de plantas y rutas //
 ///////////////////////////////////
@@ -62,11 +58,28 @@ function arranque(letra, tipo) {
         /*La pagina tiene que llamarse como la imagen   */
         ///////////////////////////////////////////////////
         preloadF = [
-        "Albizia X julibrissin",
+        "Albizia julibrissin",
         "Brachychiton populneus",
+        "Celtis australis",
+        "Ceratonia siliqua",
         "Cupressus sempervirens",
         "Cycas revoluta",
-        "Ruscus aculeatus"
+        "Eriobotrya japonica",
+        "Ginkgo biloba",
+        "Grevillea robusta",
+        "Hedera helix",
+        "Jacaranda mimosifolia",
+        "Juniperus sabina",
+        "Lantana camara",
+        "Melia azedarach",
+        "Monstera deliciosa",
+        "Olea europaea",
+        "Pinus canariensis",
+        "Platanus x hispanica",
+        "Ruscus aculeatus",
+        "Sophora japonica",
+        "Teucrium fruticans",
+        "Yucca elephantipes"
         ]
 
         //////////////////////////////////////////////////
@@ -94,7 +107,8 @@ function arranque(letra, tipo) {
         /*La pagina tiene que llamarse como la imagen   */
         ///////////////////////////////////////////////////
         var preloadR = [
-            "Facultad Magisterio"
+            "Facultad Magisterio",
+            "Lluís Vives"
             ]
         
         //////////////////////////////////////////////////
@@ -121,15 +135,15 @@ function cargarflores(images) {
         var array = images[i].name.split(" ");
         var corto = array[0];
         var corto2 = array[1];
-        if (corto2.length < 2) { corto = corto + " " + array[1]; corto2 = array[2] }
+         if (corto2.length < 2) { corto = corto + " " + array[1]; corto2 = array[2] }
         var cartel =  corto+"\n"+corto2;
-        var pie = "<figcaption style=position:relative;top:100px;left:9px;color:white; max-height=50px><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + corto + "</i></font></figcaption>"
-        var pie2 = "<figcaption style=position:relative;top:100px;left:9px;color:white; max-height=50px><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + corto2 + "</i></font></figcaption>"
+        var pie = "<figcaption style=position:relative;top:100px;left:9px;color:white;><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + corto + "</i></font></figcaption>"
+        var pie2 = "<figcaption style=position:relative;top:100px;left:9px;color:white;><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + corto2 + "</i></font></figcaption>"
         var nom = "<div style=display:inline-block>"+pie+pie2+"<img src= " + images[i].src + " onmouseover = playOver() id=" + images[i].name + " width=100 height=95 class=floritem img-responsive></div>";
         var pest = "<li><i>"+ images[i].name + "</i></li>";
         $('#glosario').append(
             $('<a />', { href: images[i].alt, html: nom}
-          ).hide().delay(i * 200).fadeIn("slow"));
+          ).hide().delay(i * 150).fadeIn("slow"));
         $('#barraflor').append(
             $('<a />', { href: images[i].alt, html: pest }
           ));
@@ -139,14 +153,21 @@ function cargarflores(images) {
 function cargarRutas(images) {
     $('#barraflor').empty();
     for (i = 0; i < images.length; i++) {
-        var nom = "<img src= " + images[i].src + " onmouseover=playOver() width=100 height=95 class=floritem img-responsive title=" + images[i].name + ">";
+        var array = images[i].name.split(" ");
+        var corto = array[0];
+        var corto2 = array[1];
+        if (corto2.length < 2) { corto = corto + " " + array[1]; corto2 = array[2] }
+        var cartel = corto + "\n" + corto2;
+        var pie = "<figcaption style=position:relative;top:100px;left:9px;color:white;><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + corto + "</i></font></figcaption>"
+        var pie2 = "<figcaption style=position:relative;top:100px;left:9px;color:white;><font size=2 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + corto2 + "</i></font></figcaption>"
+        var nom = "<div style=display:inline-block>" + pie + pie2 + "<img src= " + images[i].src + " onmouseover = playOver() id=" + images[i].name + " width=100 height=95 class=floritem img-responsive></div>";
         var pest = "<li><i>" + images[i].name + "</i></li>";
         $('#glosario').append(
             $('<a />', { href: images[i].alt, html: nom }
-          ).hide().delay(i * 300).fadeIn("slow"));
+          ).hide().delay(i * 150).fadeIn("slow"));
         $('#barraflor').append(
-    $('<a />', { href: images[i].alt, html: pest }
-  ));
+            $('<a />', { href: images[i].alt, html: pest }
+          ));
     } delete (images)
 };
 
@@ -165,11 +186,14 @@ function filtrar(letra, tipo) {
 
 
 
+
 //cambio de pagina a inicio
 $(document).ready(function () {
     $("#ini").click(function () {
-        window.location = 'http://www.uv.es/quicknatura/';
+        $("body").hide().delay(200).fadeIn("slow");
+        $("html").load("index.html");
     });
+
 });
 
 //cambio de pagina a proyecto
@@ -180,7 +204,7 @@ $(document).ready(function () {
         $("#visor").hide().delay(200).fadeIn("slow").attr("src", "media/sergioexplor.jpg");
         $("#visor2").hide().delay(200).fadeIn("slow").attr("src", "media/silene.jpg");
         $("#myNavbar").collapse('hide');
-        $('#botonglosario').attr("style", "visibility: hidden");
+        $('#botonglosario').attr("style", "visibility: hidden")
         window.location.hash = $(this).attr("id");
         flagRedi();
         $("nav ul li").removeClass("active");
@@ -191,7 +215,7 @@ $(document).ready(function () {
             var ind = cookie.indexOf("lang=");
             var lang = cookie.substring(ind + 5, ind + 7);
             changeLang(lang);
-        },100);
+        }, 100);
     });
 });
 
@@ -204,7 +228,7 @@ $(document).ready(function () {
         $("#visor").hide().delay(200).fadeIn("slow").attr("src", "media/manohelechobuena.jpg");
         $("#visor2").hide().delay(200).fadeIn("slow").attr("src", "media/camp.jpg");
         $("#myNavbar").collapse('hide');
-        $('#botonglosario').attr("style", "visibility: visible");
+        $('#botonglosario').attr("style", "visibility: visible")
         window.location.hash = $(this).attr("id");
         flagRedi();
         $("nav ul li").removeClass("active");
@@ -215,10 +239,30 @@ $(document).ready(function () {
             var ind = cookie.indexOf("lang=");
             var lang = cookie.substring(ind + 5, ind + 7);
             changeLang(lang);
-        },100);
+        }, 100);
     });
 });
 
+//accion de boton volver desde flora
+$(document).ready(function () {
+    $("#volver").click(function () {
+        $("figcaption").empty();
+        $("#seccion").unload("rutas.html");
+        $("#seccion").hide().delay(200).fadeIn("slow").load("BD.html");
+        $("#visor").hide().delay(200).fadeIn("slow").attr("src", "media/img-20160510-wa0003.jpg");
+        window.location.hash = $(this).attr("id");
+        flagRedi();
+        $("nav ul li").removeClass("active");
+        $(this).parent().addClass("active");
+        setTimeout(function () {
+            //idioma
+            var cookie = document.cookie;
+            var ind = cookie.indexOf("lang=");
+            var lang = cookie.substring(ind + 5, ind + 7);
+            changeLang(lang);
+        }, 100);
+    });
+});
 
 //cambio de pagina a rutas
 $(document).ready(function () {
@@ -240,7 +284,7 @@ $(document).ready(function () {
             var ind = cookie.indexOf("lang=");
             var lang = cookie.substring(ind + 5, ind + 7);
             changeLang(lang);
-        },100);
+        }, 100);
     });
 });
 
@@ -263,7 +307,7 @@ $(document).ready(function () {
             var ind = cookie.indexOf("lang=");
             var lang = cookie.substring(ind + 5, ind + 7);
             changeLang(lang);
-        },100);
+        }, 100);
     });
 });
 
@@ -274,87 +318,51 @@ function playOver() {
      audio.play();
 }
 
-
-$(window).on("resize", function () {
-    $('.modal:visible').each(centerModal);
+//accion de mostsrar mapa modal
+$(document).ready(function () {
+    $("#maps").click(function () {
+        $("#myModal").attr("align", "middle");
+        $("#myModal iframe").attr("src", "https://www.google.com/maps/d/embed?mid=12SleMIc3btMOoWAjjUHQerH5458");
+        $("#myModal iframe").attr("width", $(document).width()/2-30);
+        $("#myModal iframe").attr("height", $(document).height()-50);
+        $("#myModal").modal();
+    });
 });
-
-function centerModal() {
-    $(this).css('display', 'block');
-    var $dialog = $(this).find(".modal-dialog");
-    var offset = ($(window).height() - $dialog.height()) / 2;
-    // Center modal vertically in window
-    $dialog.css("margin-top", offset);
-}
 
 //accion de mostrar imagenes modales
 $(document).ready(function () {
-    centerModal();
     $("#secciones img").click(function () {
         $("#myModal").attr("align", "middle");
         $("#myModal iframe").attr("src", $(this).attr("src"));
         $("#myModal iframe").load(function(){
-            centerModal();
+
             //callback de load
             //esto para controlar el tamaño de las imagenes q vienen y el iframe
             var imgW = $('#myModal iframe').contents().find('img').width();
             var imgH = $('#myModal iframe').contents().find('img').height();
-            $('#myModal iframe').contents().find('img').attr("width",window.innerWidth-20);
-            $('#myModal iframe').contents().find('img').attr("height", window.innerHeight-20);
-            // $('#myModal iframe').contents().find('img').addClass("img-responsive");
-            //var ratio = imgH >= imgW;
 
-            //var winW = window.innerWidth;
-            //var winH = window.innerHeight;
-            //var winratio = winH >= winW;
+            var ratio = imgH >= imgW;
 
-
-            //if (ratio) {
-            //    if (winratio) {
-            //        $('#myModal iframe').contents().find('img').attr("width", winW);
-            //   }else{
-            //        $('#myModal iframe').contents().find('img').attr("height", winH);
-            //    }
+            //depende si es vertical/horizontal
+            if (ratio) {
+                //se ajusta a la altura
+                $('#myModal iframe').contents().find('img').attr("height", $(document).height() - 60);
                
-            //} else {
-            //    if (winratio) {
-            //        $('#myModal iframe').contents().find('img').attr("width", winW);
-            //    } else {
-            //        $('#myModal iframe').contents().find('img').attr("height", winH);
-            //    }
-            //}
+            } else {
+                //se ajusta a la anchura
+                $('#myModal iframe').contents().find('img').attr("width", $(document).width()/1.5 - 60);
+
+            }
 
             //el iframe igual q la imagen
-        //    $("#myModal iframe").attr("width", $('#myModal iframe').contents().find('img').width()+5);
-        //    $("#myModal iframe").attr("height", $('#myModal iframe').contents().find('img').height() + 5);
+            $("#myModal iframe").attr("width", $('#myModal iframe').contents().find('img').width()+5);
+            $("#myModal iframe").attr("height", $('#myModal iframe').contents().find('img').height() + 5);
             //y se lanza la ventana modal
             $("#myModal").modal();
         });
 
     });
 });
-
-
-//efecto para header random
-$(document).ready(function () {
-    var op = Math.floor((Math.random() * 10) + 1);
-    switch(op){
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-            $("#cabecera").css("background", "url(media/green-grass-header.jpg) round space");
-            break;
-        case 6:
-        case 7:
-        case 8:
-        case 9:
-        case 10:
-            $("#cabecera").css("background", "url(media/header2.jpg) round space");
-            break;
-    }
-})
 
 //control tamaño seccion
 $(document).ready(function () {
@@ -367,54 +375,38 @@ $(document).ready(function () {
 
 })
 
-function ajusteSeccion(){
-    var pos = $(".navbar").position().top;
-    var pos2 = window.innerHeight;
-    var tam = $("#cabecera").height();
-    $('#seccion').css('max-height', pos2 - pos - tam + 40);
-}
-
-
-function controlBordes() {
-    if (window.innerWidth < 768) {
-        $("#secciones").css({"padding" : "0px"});
-        $("#secciones .container-fluid").css({"padding left" : "0px"});
-        $("#secciones .container-fluid").css({ "padding right": "0px" });
-        $("seccion").css("padding", "0px");
-        $("seccion h1").css("padding", "0px");
-        $("seccion h2").css("padding", "0px");
-
-    } else {
-        $("#secciones").css({ "padding": "20px" });
-        $("#secciones .container-fluid").css({ "padding left": "15px" });
-        $("#secciones .container-fluid").css({ "padding right": "15px" });
-        $("seccion").css("padding", "0px");
-        $("seccion h1").css({ "padding": "5px" });
-        $("seccion h2").css({ "padding": "5px" });
-    }
-
-}
-
-
 //efecto para refresco de pagina
 $(document).ready(function () {
-    $('body').css('display', 'none');
-    $("body").fadeIn(500);
+    $("body").hide().delay(250).fadeIn("slow");
 })
 
-//efecto figcaption en floritem
+//efecto para header random
 $(document).ready(function () {
-    $('.floritem figcaption').mouseover(function () {
-        $('.floritem').mouseover();
-    });
+    var op = Math.floor((Math.random() * 10) + 1);
+    switch(op){
+        case 1:
+        case 2:
+			$("#cabecera").css("background", "url(media/header5.jpg) round space");
+            break;
+        case 3:
+        case 4:
+        case 5:
+        case 6:$("#cabecera").css("background", "url(media/header4b.jpg) round space");
+            break;
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            $("#cabecera").css("background", "url(media/header2.jpg) round space");
+            break;
+    }
 })
-
 
 //efecto google ocultar barra
 var wheelkey = true;
 var lastScrollTop = 0;
 $(document).ready(function () {
-    $('#seccion').bind('scroll', function(e){
+    $('#seccion').bind('scroll', function (e) {
         if (window.innerWidth < 768) {
             st = $(this).scrollTop();
             if (st > lastScrollTop) {
@@ -432,9 +424,9 @@ $(document).ready(function () {
             }
             lastScrollTop = st;
         }
-    
+
         //prevent page fom scrolling
-       // return false;
+        // return false;
     });
 
 });
@@ -460,32 +452,32 @@ function motrarFlores() {
                 var page = $(this).parent().parent().attr('href');
                 var texto;
                 //para coger el texto de la planta que toca
-                    $.ajax({
-                        type: "GET",
-                        async: false,
-                        url: page,
-                        dataType: "html",
-                        success: function (data) {
-                            //se coge el titulo y el primer parrafo
-                            var ind = data.indexOf("<article");
-                            var ind2 = data.indexOf("<i", ind);
-                            var ind3 = data.indexOf("</i>", ind);
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url: page,
+                    dataType: "html",
+                    success: function (data) {
+                        //se coge el titulo y el primer parrafo
+                        var ind = data.indexOf("<article");
+                        var ind2 = data.indexOf("<i", ind);
+                        var ind3 = data.indexOf("</i>", ind);
 
-                            var ind4 = data.indexOf("<p", ind);
-                            var ind5 = data.indexOf("</p>", ind);
+                        var ind4 = data.indexOf("<p", ind);
+                        var ind5 = data.indexOf("</p>", ind);
 
-                            if (window.innerWidth < 1400) {
-                                texto = "<font size=3 style=background-color:rgba(0,0,0,0.6);>" + data.substring(ind2, ind3) + "</font>";
-                            } else {
-                                texto = "<font size=6 style=background-color:rgba(0,0,0,0.6);>" + data.substring(ind2, ind3) + "</font>";
-                            }
-                            texto += "</br></br>" + data.substring(ind4, ind5);
-                        },
-                        error: function () {
-                            alert("La flor que busca todavia no está disponible");
+                        if (window.innerWidth < 1400) {
+                            texto = "<font size=3 style=background-color:rgba(0,0,0,0.6);>" + data.substring(ind2, ind3) + "</font>";
+                        } else {
+                            texto = "<font size=6 style=background-color:rgba(0,0,0,0.6);>" + data.substring(ind2, ind3) + "</font>";
                         }
-                    })
-                
+                        texto += "</br></br>" + data.substring(ind4, ind5);
+                    },
+                    error: function () {
+                        alert("La flor que busca todavia no está disponible");
+                    }
+                })
+
 
                 myTimeout = setTimeout(function () {
                     $("#seccion2").fadeOut("fast");
@@ -498,14 +490,14 @@ function motrarFlores() {
                     } else {
                         var pie = "<figcaption  style=position:absolute;left:50px;color:white><font size=3 style=background-color:rgba(0,0,0,0.6);border-radius:7px><i>" + texto + "</i></font></figcaption>"
                     }
-                  
-                    $("#seccion2").html("<div class=responsive height=" + height +">"+pie + "<img id=pagequick class=responsive height=" + height + ">");
+
+                    $("#seccion2").html("<div class=responsive height=" + height + ">" + pie + "<img id=pagequick class=responsive height=" + height + ">");
                     $("#seccion3").html("");
                     $("#pagequick").attr("src", link);
                     $("#seccion2").fadeIn("fast");
                     $("#seccion3").fadeIn("fast");
                     var width = $("#pagequick").attr('width');
-                   // $("#seccion2 figcaption").css({width: width})
+                    // $("#seccion2 figcaption").css({width: width})
                     $("#seccion2 figcaption").hide().delay(1000).fadeIn(800);
                 }, 300)
             }
@@ -527,6 +519,33 @@ function motrarFlores() {
     })
 }
 
+function controlBordes() {
+    if (window.innerWidth < 768) {
+        $("#secciones").css({ "padding": "0px" });
+        $("#secciones .container-fluid").css({ "padding left": "0px" });
+        $("#secciones .container-fluid").css({ "padding right": "0px" });
+        $("seccion").css("padding", "0px");
+        $("seccion h1").css("padding", "0px");
+        $("seccion h2").css("padding", "0px");
+
+    } else {
+        $("#secciones").css({ "padding": "20px" });
+        $("#secciones .container-fluid").css({ "padding left": "15px" });
+        $("#secciones .container-fluid").css({ "padding right": "15px" });
+        $("seccion").css("padding", "0px");
+        $("seccion h1").css({ "padding": "5px" });
+        $("seccion h2").css({ "padding": "5px" });
+    }
+
+}
+
+function ajusteSeccion() {
+    var pos = $(".navbar").position().top;
+    var pos2 = window.innerHeight;
+    var tam = $("#cabecera").height();
+    $('#seccion').css('max-height', pos2 - pos - tam + 40);
+}
+
 //control de flag para redireccion
 var flagredi = false;
 function flagRedi() {
@@ -540,7 +559,7 @@ function flagRedi() {
 //control redireccion para hash
 $(document).ready(function () {
     window.addEventListener('popstate', function () {
-        setTimeout(function () { 
+        setTimeout(function () {
             if (flagredi == false) {
                 switch (window.location.hash) {
                     case "#proyecto":
@@ -559,28 +578,28 @@ $(document).ready(function () {
                         location.reload();
                 }
             }
-        },50)
+        }, 50)
     })
 })
 
 //control redireccion para carga de pagina
 $(document).ready(function () {
     window.addEventListener('load', function () {
-                switch (window.location.hash) {
-                    case "#proyecto":
-                        $("#proyecto").click();
-                        break;
-                    case "#flor":
-                        $("#flor").click();
-                        break;
-                    case "#rutas":
-                        $("#rutas").click();
-                        break;
-                    case "#contac":
-                        $("#contac").click();
-                        break;
-                }
-            })
+        switch (window.location.hash) {
+            case "#proyecto":
+                $("#proyecto").click();
+                break;
+            case "#flor":
+                $("#flor").click();
+                break;
+            case "#rutas":
+                $("#rutas").click();
+                break;
+            case "#contac":
+                $("#contac").click();
+                break;
+        }
+    })
 })
 
 /////////////////////////////////////
@@ -620,7 +639,7 @@ $(window).load(function () {
             changeLang("es");
             changeLangStatic("es");
         }
-    },10);
+    }, 10);
 });
 
 //control de los elementos html q se cambian en idioma
@@ -714,6 +733,60 @@ function changeLangStatic(lang) {
             break;
     }
 
+}
+
+//////////////////////////////////////////////////
+
+//control de carga de pagina y cookie
+$(window).load(function () {
+    setTimeout(function () {
+        var cookie = document.cookie;
+        var ind = cookie.indexOf("lang=");
+        if (ind >= 0) {
+            ind = ind + 4;
+            var lang = cookie.substring(ind + 1, ind + 3);
+            changeLang(lang);
+        } else {
+            document.cookie = "lang=es";
+            changeLang("es");
+        }
+    }, 10);
+});
+
+//control de los elementos html q se cambian en idioma
+function changeLang(lang) {
+    $("h1:lang(es)").hide();
+    $("h2:lang(es)").hide();
+    $("p:lang(es)").hide();
+    $("figcaption:lang(es)").hide();
+    $("h1:lang(en)").hide();
+    $("h2:lang(en)").hide();
+    $("p:lang(en)").hide();
+    $("figcaption:lang(en)").hide();
+    $("h1:lang(va)").hide();
+    $("h2:lang(va)").hide();
+    $("p:lang(va)").hide();
+    $("figcaption:lang(va)").hide();
+    switch (lang) {
+        case "en":
+            $("h1:lang(en)").fadeIn("slow");
+            $("h2:lang(en)").fadeIn("slow");;
+            $("p:lang(en)").fadeIn("slow");;
+            $("figcaption:lang(en)").fadeIn("slow");;
+            break;
+        case "es":
+            $("h1:lang(es)").fadeIn("slow");
+            $("h2:lang(es)").fadeIn("slow");
+            $("p:lang(es)").fadeIn("slow");
+            $("figcaption:lang(es)").fadeIn("slow");
+            break;
+        case "va":
+            $("h1:lang(va)").show();
+            $("h2:lang(va)").show();
+            $("p:lang(va)").show();
+            $("figcaption:lang(va)").show();
+            break;
+    }
 }
 
 //////////////////////////////////////////////////
