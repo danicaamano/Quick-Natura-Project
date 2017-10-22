@@ -75,7 +75,7 @@ function arranque(letra, tipo) {
         "Lantana camara",
         "Melia azedarach",
         "Monstera deliciosa",
-        "Musa paradisiaca",
+        "Musa x paradisiaca",
         "Olea europaea",
         "Pinus canariensis",
         "Platanus x hispanica",
