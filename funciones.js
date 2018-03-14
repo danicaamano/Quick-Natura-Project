@@ -822,7 +822,4 @@ function changeLang(lang) {
 //////////////////////////////////////////////////
 
 
-function Buscar() {
-    var link_s = document.getElementById('link_id').value;
-    document.getElementById('link_str').innerHTML = link_s.link()
-}
+
