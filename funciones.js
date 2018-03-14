@@ -344,10 +344,9 @@ $(document).ready(function () {
 
 
 //para que los botones suenen
-function playOver() {
-     audio = document.getElementById("gotita");
-     audio.play();
-}
+//function playOver() {
+  //   audio = document.getElementById("gotita");
+    // audio.play();
 
 //accion de mostsrar mapa modal
 $(document).ready(function () {
@@ -821,3 +820,9 @@ function changeLang(lang) {
 }
 
 //////////////////////////////////////////////////
+
+
+function Buscar() {
+    var link_s = document.getElementById('link_id').value;
+    document.getElementById('link_str').innerHTML = link_s.link()
+}
