@@ -58,7 +58,7 @@ function arranque(letra, tipo) {
         /*La pagina tiene que llamarse como la imagen   */
         ///////////////////////////////////////////////////
         preloadF = [
-        "Adiantun capillus-veneris",
+        "Adiantum capillus-veneris",
         "Albizia julibrissin",
         "Araucaria heterophylla",
         "Arbutus unedo",
