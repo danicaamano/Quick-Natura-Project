@@ -74,7 +74,7 @@ function arranque(letra, tipo) {
         "Cycas revoluta",
         "Eriobotrya japonica",
         "Fatsia japonica",
-        "Ficus elástica",
+        "Ficus elastica",
         "Ginkgo biloba",
         "Grevillea robusta",
         "Hedera helix",
