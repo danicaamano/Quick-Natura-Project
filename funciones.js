@@ -101,6 +101,7 @@ function arranque(letra, tipo) {
         "Punica granatum",
         "Quercus faginea",
         "Quercus ilex",
+        "Rosmarinus officinalis",
         "Ruscus aculeatus",
         "Santolina chamaecyparissus",
         "Senecio cineraria",
@@ -109,6 +110,7 @@ function arranque(letra, tipo) {
         "Teucrium fruticans",
         "Tilia platyphyllos",
         "Tipuana tipu",
+        "Thymus vulgaris",
         "Ulmus minor",
         "Yucca elephantipes"
         ]
