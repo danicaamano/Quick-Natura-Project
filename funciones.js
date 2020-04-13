@@ -90,12 +90,13 @@ function arranque(letra, tipo) {
         "Myrtus communis",
         "Nerium oleander",
         "Olea europaea",
+        "Parthenocissus tricuspidata",
+        "Pinus halepensis",
         "Pinus canariensis",
         "Pinus pinea",
         "Pittosporum tobira",
         "Platanus x hispanica",
         "Plumbago auriculata",
-        "Parthenocissus tricuspidata",
         "Populus alba",
         "Populus nigra",
         "Punica granatum",
@@ -602,6 +603,9 @@ $(document).ready(function () {
                         break;
                     case "#rutas":
                         $("#rutas").click();
+                        break;
+                    case "#descargas":
+                        $("#descargas").click();
                         break;
                     case "#contac":
                         $("#contac").click();
