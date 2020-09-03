@@ -345,6 +345,52 @@ $(document).ready(function () {
     });
 });
 
+//cambio de pagina a descargas
+$(document).ready(function () {
+    $("#descargas").click(function () {
+        $("figcaption").empty();
+        $("#seccion").hide().delay(200).fadeIn("slow").load("descargas.html");
+        $("#visor").hide().delay(200).fadeIn("slow").attr("src", "media/camp.jpg");
+        $("#visor2").hide().delay(200).fadeIn("slow").attr("src", "media/manohelechobuena.jpg");
+        $("#myNavbar").collapse('hide');
+        $('#botonglosario').attr("style", "visibility: hidden")
+        window.location.hash = $(this).attr("id");
+        flagRedi();
+        $("nav ul li").removeClass("active");
+        $(this).parent().addClass("active");
+        setTimeout(function () {
+            //idioma
+            var cookie = document.cookie;
+            var ind = cookie.indexOf("lang=");
+            var lang = cookie.substring(ind + 5, ind + 7);
+            changeLang(lang);
+        }, 100);
+    });
+});
+
+//cambio de pagina a ciencia ciudadana
+$(document).ready(function () {
+    $("#cienciac").click(function () {
+        $("figcaption").empty();
+        $("#seccion").hide().delay(200).fadeIn("slow").load("cienciac.html");
+        $("#visor").hide().delay(200).fadeIn("slow").attr("src", "media/rutas.jpg");
+        $("#visor2").hide().delay(200).fadeIn("slow").attr("src", "media/explicacion.jpg");
+        $("#myNavbar").collapse('hide');
+        $('#botonglosario').attr("style", "visibility: hidden")
+        window.location.hash = $(this).attr("id");
+        flagRedi();
+        $("nav ul li").removeClass("active");
+        $(this).parent().addClass("active");
+        setTimeout(function () {
+            //idioma
+            var cookie = document.cookie;
+            var ind = cookie.indexOf("lang=");
+            var lang = cookie.substring(ind + 5, ind + 7);
+            changeLang(lang);
+        }, 100);
+    });
+});
+
 
 //para que los botones suenen
 //function playOver() {
@@ -607,6 +653,9 @@ $(document).ready(function () {
                     case "#descargas":
                         $("#descargas").click();
                         break;
+                    case "#cienciac":
+                        $("#cienciac").click();
+                        break;
                     case "#contac":
                         $("#contac").click();
                         break;
@@ -633,6 +682,12 @@ $(document).ready(function () {
                 break;
             case "#contac":
                 $("#contac").click();
+                break;
+            case "#descargas":
+                $("#descargas").click();
+                break;
+            case "#cienciac":
+                $("#cienciac").click();
                 break;
         }
     })
@@ -744,10 +799,12 @@ function changeLangStatic(lang) {
             });
             break;
         case "es":
-            $("#proyecto").text("Projecto");
+            $("#proyecto").text("Proyecto");
             $("#flor").text("Flora");
             $("#rutas").text("Rutas");
             $("#contac").text("Contacto");
+            $("#descargas").text("Descargas");
+            $("#cienciac").text("Ciencia Ciudadana");
             $("#botonglosario").text("Listado");
             $("#ini").text("Inicio");
             $(".infolang").text("Español");
